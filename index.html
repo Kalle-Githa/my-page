@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- i head taggen lägger man alt man som inte sysns för anvandaren -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My first Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <h2>JS</h2>
+      <div class="nav-links">
+        <a href="https://github.com/midi-mixer">
+          <img src="/images/github.svg" alt="Github logo" />
+        </a>
+        <a
+          href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_nav-header-signin"
+        >
+          <img src="/images/linkedin.svg" alt="linkedin logo" />
+        </a>
+        <a href="https://www.instagram.com/">
+          <img src="/images/instagram.svg" alt="instagram logo" />
+        </a>
+      </div>
+    </nav>
+    <main>
+      <header class="hero">
+        <div class="hero-img">
+          <img
+            src="/images/milian_o_emilio.jpeg"
+            alt="My son with he's cousins"
+          />
+          <!-- i alt= kan man lägga ett namn som kommer vara kopplad till bilden när man söker den på nätet alså taggad-->
+        </div>
+        <div class="hero-text-container">
+          <h1>
+            Hi! My name is KalleGitha, 2 time father and im a Web developer from
+            STHLM
+          </h1>
+          <p>
+            I need to learn this programing stuff so i can be free from working
+            in a factory from 9 to 5. The journey will be long but thats ok :)
+            Im preperd for that! Follow me and be part of my road to be become a
+            web developer
+          </p>
+          <!-- TODO: Add a href -->
+          <a href="#my-projects">
+            <!-- detta gjör att man blir nerscrollad till my-projects -->
+            <button class="work-button">Projects</button>
+          </a>
+        </div>
+      </header>
+      <section class="Work">
+        <h2 class="work-titel">Work</h2>
+        <p class="work-subtitel">
+          We provide variabel code language and project management to businesses
+          all over the world
+        </p>
+        <div class="chip-wrapper">
+          <div class="chip" style="border-color: red">React</div>
+          <div class="chip" style="border-color: orange">Firebase</div>
+          <div class="chip" style="border-color: blue">NPM</div>
+          <a href="https://www.mongodb.com/">
+            <div class="chip" style="border-color: purple">Mongo DB</div>
+          </a>
+          <div class="chip" style="border-color: lightblue">Javascript</div>
+          <div class="chip" style="border-color: lightsalmon">Typescript</div>
+          <div class="chip" style="border-color: yellowgreen">HTML</div>
+          <div class="chip" style="border-color: lightpink">CSS</div>
+          <!-- class är för att sen använda javascrip till att ändra alla i den classen samtidigt -->
+        </div>
+      </section>
+      <section class="projects-container" id="my-projects">
+        <article class="project">
+          <div class="img-container">
+            <img
+              class="project-img"
+              src="/images/project1.jpg"
+              alt="Spotify clone"
+              width="400px"
+            />
+            <!-- alt= är för att ge bilden ett namn ifall bilden inte visa kankse keff internet eller nått -->
+            <div class="img-overlay"></div>
+          </div>
+          <div class="project-text-container">
+            <h3 class="project-text-titel">Spotify Clone</h3>
+            <p class="project-text-subtitel">
+              This is my own Spotify app that i developed my self with the help
+              of very professional teachers in this capital called Stockholm.
+            </p>
+            <p class="project-text-subtitel">I do this because i love music!</p>
+            <button id="view-the-app">View the app</button>
+          </div>
+        </article>
+        <article class="project">
+          <div class="img-container">
+            <img
+              class="project-img"
+              src="/images/project2.jpg"
+              alt="Spotify clone"
+              width="400px"
+            />
+            <!-- alt= är för att ge bilden ett namn ifall bilden inte visa kankse keff internet eller nått -->
+            <div class="img-overlay"></div>
+          </div>
+          <div class="project-text-container">
+            <h3 class="project-text-titel">Spotify Clone</h3>
+            <p class="project-text-subtitel">
+              This is my own Spotify app that i developed my self with the help
+              of very professional teachers in this capital called Stockholm.
+            </p>
+            <p class="project-text-subtitel">I do this because i love music!</p>
+            <button id="view-the-app">View the app</button>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <p class="footer-license">&copy; 2023 - Kalle Git</p>
+    </footer>
+  </body>
+</html>
